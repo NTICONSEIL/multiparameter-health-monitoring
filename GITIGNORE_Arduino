@@ -1,0 +1,387 @@
+# Arduino Project .gitignore
+# Ignorer les fichiers inutiles pour le repository Git
+
+# ============================================
+# Arduino IDE Generated Files
+# ============================================
+*.o
+*.a
+*.so
+*.elf
+*.bin
+*.hex
+*.eep
+*.lss
+*.map
+
+# Arduino IDE Temporary Files
+build/
+dist/
+*.class
+*.pyc
+__pycache__/
+*.egg-info/
+
+# ============================================
+# IDE et Éditeurs
+# ============================================
+
+# Arduino IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.sln
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+.packages
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+# ============================================
+# Build Outputs
+# ============================================
+build/
+*.o
+*.o.d
+*.elf
+*.bin
+*.hex
+*.eep
+*.eeprom
+*.lss
+*.map
+*.sym
+*.d
+
+# ============================================
+# Platform IO
+# ============================================
+.pio/
+.pioenvs/
+.piolibdeps/
+build/
+dist/
+env/
+
+# ============================================
+# Fichiers OS
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+
+# ============================================
+# Documentation Générée
+# ============================================
+docs/_build/
+*.pdf
+*.docx
+
+# ============================================
+# Données et Logs
+# ============================================
+
+# CSV/Data Files (sauf reference files)
+data/raw_data/*.csv
+!data/raw_data/.gitkeep
+!data/raw_data/README.md
+
+# Logs
+*.log
+*.logs
+debug.log
+
+# Temporary Data
+*.tmp
+*.bak
+*.backup
+
+# ============================================
+# Dependencies et Packages
+# ============================================
+
+# Python
+venv/
+env/
+ENV/
+*.pip
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Ruby
+Gemfile.lock
+.bundle/
+
+# ============================================
+# Testing Artifacts
+# ============================================
+
+# gcov Coverage
+*.gcda
+*.gcno
+*.gcov
+coverage/
+htmlcov/
+
+# Unit Testing
+test_results/
+.pytest_cache/
+.coverage
+coverage.xml
+
+# ============================================
+# Serial Monitor & Terminal
+# ============================================
+
+# Serial capture files
+*.log
+
+# ============================================
+# Configuration Secrets
+# ============================================
+
+# Arduino Secrets
+arduino_secrets.h
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# WiFi Credentials
+wifi_config.h
+credentials.h
+
+# API Keys
+api_keys.h
+secrets.h
+
+# ============================================
+# Compiled Binaries & Firmware
+# ============================================
+
+# Hex files générés
+*.hex
+*.bin
+*.elf
+
+# ============================================
+# Visual Studio
+# ============================================
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono
+mono_crash.*
+
+# MSBuild
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ============================================
+# Fichiers Fritzing
+# ============================================
+
+*.fzz~
+*_bb.fzz~
+
+# ============================================
+# KiCad
+# ============================================
+
+*.sch~
+*.kicad_pcb~
+*.kicad_sch~
+*.fp-info-cache
+*.net
+*.dsn
+
+# ============================================
+# Fichiers Backups
+# ============================================
+
+*.bak
+*.backup
+*.autosave
+*.~*
+*_backup/
+
+# ============================================
+# Database Files
+# ============================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+
+# ============================================
+# Fichiers Compressés
+# ============================================
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# Notes Locales (ne pas partager)
+# ============================================
+
+notes.txt
+TODO.txt
+personal_notes.md
+.notes/
+
+# ============================================
+# Fichiers Système Générés
+# ============================================
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.Trash-*
+
+# ============================================
+# Documentation Temporaire
+# ============================================
+
+# Fichiers temporaires Sphinx
+docs/_build/
+docs/.doctrees/
+
+# MkDocs
+site/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ============================================
+# Python Virtual Environments
+# ============================================
+
+venv/
+env/
+.venv
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================
+# Fichiers Temporaires Divers
+# ============================================
+
+*.swp
+*.swo
+*~
+.#*
+\#*\#
+
+# ============================================
+# EXCEPTIONS - Fichiers à TRACKER
+# ============================================
+
+# ⚠️ NE PAS ignorer ces dossiers/fichiers
+!.gitkeep
+!.gitignore
+!.github/
+!firmware/
+!hardware/
+!docs/
+!tests/
+!scripts/
+!.github/workflows/
+
+# Fichiers de configuration qu'il FAUT tracker
+!.github/ISSUE_TEMPLATE/
+!.github/PULL_REQUEST_TEMPLATE.md
+!setup.cfg
+!.editorconfig
+
+# Données de référence à tracker
+!data/reference_measurements.csv
+!data/ml_models/
+!tests/validation_data/
+
+# ============================================
+# Commentaires
+# ============================================
+
+# Ce fichier ignore les fichiers générés par :
+# - Arduino IDE
+# - PlatformIO
+# - Éditeurs de code
+# - Systèmes d'exploitation
+# - Compilateurs et outils
+#
+# Seul le code source et la documentation
+# sont trackés dans le repository.
+#
+# Pour forcer l'ajout d'un fichier ignoré :
+# git add -f filename
+#
+# Pour afficher les fichiers qui seront ignorés :
+# git clean -fdXn
